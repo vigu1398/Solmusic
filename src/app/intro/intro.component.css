@@ -3,3 +3,18 @@
 	margin-bottom: 35px;
 	padding-top: 10px;
 }
+
+.intro-section
+{
+  background: #0a183d;
+}
+
+h2
+{
+  color: white;
+}
+
+span
+{
+  color: #fc0254;
+}

@@ -10,6 +10,11 @@ import { IntroComponent } from './intro/intro.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CardComponent } from './card/card.component';
+import { CardsectionComponent } from './cardsection/cardsection.component';
+import { ChartsComponent } from './charts/charts.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavComponent } from './nav/nav.component';
 
 
 
@@ -22,12 +27,17 @@ import { NavbarComponent } from './navbar/navbar.component';
     IntroComponent,
     FeedbackComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    CardComponent,
+    CardsectionComponent,
+    ChartsComponent,
+    NavComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

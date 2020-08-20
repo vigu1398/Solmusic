@@ -1,0 +1,12 @@
+<div class="topnav" id="myTopnav">
+    <button class="navbar-toggler ml-auto custom-toggler"type="button"data-toggle="collapse"
+    (click)="isCollapsed= !isCollapsed">
+     <span class="navbar-toggler-icon"></span>
+     </button>
+
+    <a routerLink = "/">Home</a>
+    <a>News</a>
+    <a routerLink = "/feedback" >Feedback</a>
+</div>
+
+<router-outlet></router-outlet>

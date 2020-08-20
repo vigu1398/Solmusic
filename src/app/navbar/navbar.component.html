@@ -1,28 +1,29 @@
-<header class="header-section clearfix">
-  <a href="index.html" class="site-logo">
-    <img src="img/logo.png" alt="">
-  </a>
-  <div class="header-right">
-    <a href="#" class="hr-btn">Help</a>
-    <span>|</span>
-    <div class="user-panel">
-      <a href="" class="login">Login</a>
-      <a href="" class="register">Create an account</a>
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <nav class="navbar navbar-expand-md navbar-blue">
+          <!-- <a><span class="site-name">Spotify</span></a> -->
+          <img src = "../../assets/images/logo.png">
+          <button class="navbar-toggler ml-auto custom-toggler"type="button"data-toggle="collapse"
+            (click)="isCollapsed= !isCollapsed">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse"[ngbCollapse]="isCollapsed"id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="navbar-link"><a routerLink = "/">Home</a></li>
+              <li class="navbar-link"><a routerLink = "/">News</a></li>
+              <li class="navbar-link"><a routerLink = "/">Concerts</a></li>
+              <li class="navbar-link"><a routerLink = "/">Tracks</a></li>
+              <li class="navbar-link"><a routerLink = "/feedback">About</a></li>
+              <li class="navbar-link"><a routerLink = "/feedback">Feedback</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
   </div>
-  <ul class="main-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Pages</a>
-      <ul class="sub-menu">
-        <li><a href="category.html">Category</a></li>
-        <li><a href="playlist.html">Playlist</a></li>
-        <li><a href="artist.html">Artist</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </li>
-    <li><a href="blog.html">News</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</header>
+</div>
+
+ <router-outlet></router-outlet>
