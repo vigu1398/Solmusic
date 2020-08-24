@@ -15,6 +15,7 @@ import { CardsectionComponent } from './cardsection/cardsection.component';
 import { ChartsComponent } from './charts/charts.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavComponent } from './nav/nav.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -31,7 +32,8 @@ import { NavComponent } from './nav/nav.component';
     CardComponent,
     CardsectionComponent,
     ChartsComponent,
-    NavComponent
+    NavComponent,
+    SidebarComponent
 
   ],
   imports: [
